@@ -5,19 +5,14 @@
 #include <fstream>
 #include <time.h>
 
-#define INF 99999.0
-
 using namespace std;
-
-const int MAX_SIZE  = 10001;
+const int MAX_SIZE  = 10000
 // Number of vertices in the graph
 int n;
 // Input, Output Matrix
 float graph[MAX_SIZE][MAX_SIZE];
 vector< vector<float> > dist;
  
-/* Define Infinite as a large enough value. This value will be used
-  for vertices not connected to each other */
 void printSolution();
 
 // Node index start from 0

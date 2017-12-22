@@ -11,8 +11,8 @@
 using namespace std;
 
 
-const char * filename = "DenseGraph-10000.bin";
-const int nVertices = 10000;
+const char * filename = "DenseGraph-3000.bin";
+const int nVertices = 10;
 
 std::random_device rd;
 std::mt19937 gen(rd());
@@ -94,7 +94,7 @@ void DenseGraph(int numOfVertices){
     fo.close();
 }
 void DenseGraph_FLOAT(int numOfVertices){
-    FILE *file = fopen("DenseGraph-10000-FLOAT.bin", "wb");
+    FILE *file = fopen("DenseGraph-10-FLOAT.bin", "wb");
    
     fprintf(file, "%d\n", numOfVertices);
  
@@ -204,7 +204,7 @@ int main()
     //ifstream fi(filename);
     //FILE *file = fopen("DenseGraph4.bin", "w");
     
-    ifstream fi("DenseGraph-10000-FLOAT.bin");
+    ifstream fi("DenseGraph-500-FLOAT.bin");
     int n;
     fi >> n;
     float d;
